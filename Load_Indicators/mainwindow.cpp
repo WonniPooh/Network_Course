@@ -8,7 +8,7 @@ MainWindow::MainWindow(QWidget *parent) : QWidget(parent)
     row = 1;
     request_sender = new RequestSender;
     layout = new QGridLayout;
-    assets_file.setFileName(QString("assets.txt"));
+    assets_file.setFileName(QString("../Load_Indicators/assets.txt"));
 
     QScrollArea* scroll = new QScrollArea;
     QVBoxLayout* vbox =  new QVBoxLayout;
