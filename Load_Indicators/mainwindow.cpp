@@ -23,7 +23,7 @@ MainWindow::MainWindow(QWidget *parent) : QWidget(parent)
     this->setLayout(vbox);
     QObject::connect(this, &MainWindow::startActions, request_sender, &RequestSender::sendRequests);
     this->show();
-//    emit startActions();
+    emit startActions();
 }
 
 MainWindow::~MainWindow()
